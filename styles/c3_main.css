@@ -21,7 +21,7 @@ a:focus, a:hover {
 header {
 	padding: 1.5em 0 2em 0;
 	border-bottom: 3px solid #931420;
-		background-image: -moz-linear-gradient(
+	background-image: -moz-linear-gradient(
 	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
 	background-image: -webkit-linear-gradient(
 	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
@@ -42,111 +42,57 @@ header img {
 	float: left;
 	padding: 0 30px;
 }
-
-#nav_menu ul{
-	list-style-type: none;
-	position: relative;
-}
-#nav_menu ul li {
-	float: left;
-}
-#nav_menu ul ul {
-	display: none;
-	position: absolute;
-	top: 100%;
-}
-
-#nav_menu ul ul li {
-	float: none;
-	position: relative;
-}
-#nav_menu ul ul li ul {
-	position:absolute;
-	left: 100%;
-	top: 0;
-}
-#nav_menu ul li.lastitem ul li ul{
-	left: -100%;
-}
-
-#nav_menu ul li:hover > ul {
-	display: block;
-}
-
-#nav_menu > ul::after {
-	content: "";
-	clear: both;
-	display: block;
-}
-
-#nav_menu ul{
-	margin: 0;
-	padding: 0;
-}
-#nav_menu li{
-	float: left;
-}
-
-#nav_menu ul li a{
-display: block;
-width: 176px;
-padding: 1em 0;
-text-decoration: none;
-background-color: blue;
-color: white;
-font-weight: bold;
-text-align: center;
-}
-
-
-#nav_menu ul ul li ul{
-	position: absolute;
-	
-}
-#nav_menu ul li.lastitem a{
-	width: 178px;
-}
-
-#nav_menu ul li a.current{
-color: yellow;
-}
-#nav_menu ul li a::hover, #nav_menu ul li a:focus{
-	background-color: gray;
-}
-
 .shadow {
 	text-shadow: 2px 2px 2px #800000;
 }
-/* the styles for the section */
-section {
-	width: 525px;
-	float: right;
-	padding: 0 20px 20px 20px;
-}
-section h1 {
+/* the styles for the main content */
+
+
+
+main h1 {
 	font-size: 150%;
-	padding: .5em 0 .25em 0;
-	margin: 0;
+	padding-top: .5em  ;
+	padding-bottom: .25em;
+	margin: 0%;
+	padding: .3em 0;
+    border-top: 3px solid #931420;
+    border-bottom: 3px solid #931420;
 }
-section h2 {
+main h2 {
 	color: #800000;
 	font-size: 130%;
 	padding: .5em 0 .25em 0;
 }
-section p {
+main h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+main img {
+	padding-bottom: 1em;
+}
+main p {
 	padding-bottom: .5em;
 }
-section blockquote {
+main blockquote {
 	padding: 0 2em;
 	font-style: italic;
 }
-section ul {
+main ul {
 	padding: 0 0 .25em 1.25em;
 }
-section li {
+main li {
 	padding-bottom: .35em;
 }
+section{
+	padding-bottom: 20px;
+	width: 525px;
+	float: right;
+}
 
+article img{
+	float: right;
+	border: 1px black;
+}
 /* the styles for the article */
 article {
 	padding: .5em 0;
@@ -160,23 +106,15 @@ article h3 {
 	font-size: 105%;
 	padding-bottom: .25em;
 }
-article img {
-	float: right;
-	margin: .5em 0 1em 1em;
-	border: 1px solid black;
-}
 
 /* the styles for the aside */
-aside {
+aside{
+	padding-left: 20px;
+	padding-right: 20px;
 	width: 215px;
 	float: right;
-	padding: 0 0 20px 20px;
 }
-aside h2 {
-	color: #800000;
-	font-size: 130%;
-	padding: .5em 0 .25em 0;
-}
+
 aside h3 {
 	font-size: 105%;
 	padding-bottom: .25em;
@@ -187,9 +125,8 @@ aside img {
 
 /* the styles for the footer */
 footer {
-	background-color: #931420;
 	clear: both;
-
+	background-color: #931420;
 }
 footer p {
 	text-align: center;
